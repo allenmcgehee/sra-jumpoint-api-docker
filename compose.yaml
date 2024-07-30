@@ -1,0 +1,10 @@
+services:
+  jpt1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+      - BT_API_HOST=$BT_API_HOST
+      - BT_CLIENT_ID=$BT_CLIENT_ID
+      - BT_CLIENT_SECRET=$BT_CLIENT_SECRET
+      - BT_JP_CODE_NAME=$BT_JP_CODE_NAME
